@@ -1,8 +1,39 @@
+// project detail
+
 .project-detail {
-
-
   img {
     margin-bottom: 1px;
+  }
+}
+
+.project-detail .video {
+  width: 100%;
+  padding: 40px 0;
+  @include breakpoint($med) {
+    padding: 80px 0;
+  }
+  @include breakpoint($med) {
+    padding: 8vw 0;
+  }
+}
+
+.project-detail .video .video-responsive-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95vw;
+  overflow: hidden;
+  aspect-ratio: 16 / 9; /* Set aspect ratio here */
+
+  iframe {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  @include breakpoint($small) {
+    max-width: 650px;
+  }
+  @include breakpoint($med) {
+    max-width: 750px;
   }
 }
 
@@ -18,8 +49,6 @@
     width: 50%;
   }
 }
-
-// project detail
 
 .project-detail .content {
   @include breakpoint($med) {
@@ -94,5 +123,4 @@
     @include breakpoint($med) {display: block;}
   }
 }
-
 
